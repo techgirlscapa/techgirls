@@ -9,126 +9,93 @@
 </head>
 <body class="font-sans">
 
-                     <!-- Navbar with Working Mobile Menu -->
-    <nav class="bg-white shadow-lg sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 py-5">
-            <div class="flex justify-between items-center">
-                <!-- Logo -->
-                <div class="flex items-center gap-3">
-                    <div class="w-12 h-12 bg-gradient-to-br from-violet-600 to-pink-600 rounded-2xl flex items-center justify-center text-white text-3xl font-bold">TG</div>
-                    <div class="text-2xl font-bold text-violet-700">TechGirls</div>
-                </div>
-
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex gap-8 text-lg font-medium">
-                    <a href="index.html" class="hover:text-violet-600">Home</a>
-                    <a href="about.html" class="hover:text-violet-600">About</a>
-                    <a href="programs.html" class="hover:text-violet-600">Programs</a>
-                    <a href="tutors.html" class="hover:text-violet-600">Our Tutors</a>
-                    <a href="gallery.html" class="hover:text-violet-600">In Action</a>
-                    <a href="contact.html" class="hover:text-violet-600">Contact</a>
-                </div>
-
-                <!-- Mobile Hamburger -->
-                <button onclick="toggleMobileMenu()" class="md:hidden text-4xl text-gray-700">
-                    ☰
-                </button>
-            </div>
-
-            <!-- Mobile Menu -->
-            <div id="mobileMenu" class="hidden md:hidden mt-6 pt-6 border-t border-gray-200">
-                <div class="flex flex-col gap-6 text-lg font-medium">
-                    <a href="index.html" class="hover:text-violet-600">Home</a>
-                    <a href="about.html" class="hover:text-violet-600">About</a>
-                    <a href="programs.html" class="hover:text-violet-600">Programs</a>
-                    <a href="tutors.html" class="hover:text-violet-600">Our Tutors</a>
-                    <a href="gallery.html" class="hover:text-violet-600">In Action</a>
-                    <a href="contact.html" class="hover:text-violet-600">Contact</a>
-                </div>
+    <!-- Top Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50 py-4 border-b">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-wrap gap-x-6 gap-y-3 justify-center text-base font-medium">
+                <a href="index.html" class="hover:text-violet-600">🏠 Home</a>
+                <a href="about.html" class="hover:text-violet-600">ℹ️ About</a>
+                <a href="programs.html" class="hover:text-violet-600">📚 Programs</a>
+                <a href="tutors.html" class="hover:text-violet-600">👩‍🏫 Our Tutors</a>
+                <a href="gallery.html" class="hover:text-violet-600">📸 In Action</a>
+                <a href="contact.html" class="hover:text-violet-600">📩 Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Mobile Menu Script -->
-    <script>
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
-        }
-    </script>
-
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
-        }
-    </script>
-
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
-        }
-    </script>
-
-    <script>
-        const menuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        menuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
-                <!-- Hero - Text Positioned Just Above Tutors' Heads -->
-    <section class="hero-bg h-screen flex items-start pt-48 md:pt-56 text-white" 
-             style="background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), 
-                    url('tutors-hero.jpg'); 
-                    background-size: cover; 
-                    background-position: center;">
-        <div class="max-w-7xl mx-auto px-6 text-center w-full">
-            <h1 class="text-6xl md:text-7xl font-bold mb-4">Our Tutors</h1>
-            <p class="text-3xl max-w-3xl mx-auto">High School Leaders Empowering Young Girls in STEM</p>
+    <!-- Hero -->
+    <section class="bg-gradient-to-br from-violet-700 to-purple-800 text-white py-28">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">Join TechGirls as a Tutor</h1>
+            <p class="text-2xl mb-8">Make a difference. Build leadership skills.<br>Empower young girls in STEM.</p>
+            <a href="#opportunities" class="inline-block bg-white text-violet-700 px-10 py-5 rounded-full text-xl font-semibold hover:scale-105 transition">
+                View Opportunities
+            </a>
         </div>
     </section>
 
-    <!-- Videos for Captains -->
-    <section class="py-20 bg-gray-50">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Meet Our Captains</h2>
-            <div class="grid md:grid-cols-2 gap-10">
-                <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                    <div class="aspect-video">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-semibold text-xl">Captain Experience</h3>
-                    </div>
+    <!-- Description -->
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-lg leading-relaxed text-gray-700">
+            <p class="mb-6">
+                TechGirls is a free after-school STEM program for 4th and 5th grade girls in Howard County, run by CAPA-HC Achieve Success Together.
+            </p>
+            <p>
+                As a high school tutor, you will teach fun, hands-on STEM lessons, mentor young girls, and help them build confidence in science and technology. 
+                You'll gain valuable teaching, leadership, and mentorship experience while making a real impact.
+            </p>
+        </div>
+    </section>
+
+    <!-- Why Become a Tutor -->
+    <section class="py-16 bg-violet-50">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Why Become a TechGirls Tutor?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow">
+                    <p class="text-5xl mb-4">💰</p>
+                    <h3 class="text-2xl font-semibold mb-3">Payment or Service Hours</h3>
+                    <p class="text-gray-600">Get paid or earn valuable community service hours.</p>
                 </div>
-                <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
-                    <div class="aspect-video">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="font-semibold text-xl">Why I Love TechGirls</h3>
-                    </div>
+                <div class="bg-white p-8 rounded-3xl shadow">
+                    <p class="text-5xl mb-4">🏆</p>
+                    <h3 class="text-2xl font-semibold mb-3">Leadership Experience</h3>
+                    <p class="text-gray-600">Develop teaching and mentorship skills that look great on college applications.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow">
+                    <p class="text-5xl mb-4">❤️</p>
+                    <h3 class="text-2xl font-semibold mb-3">Real Impact</h3>
+                    <p class="text-gray-600">Help close the gender gap in STEM by inspiring young girls.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="py-20 bg-violet-700 text-white text-center">
+    <!-- Current Opportunities -->
+    <section id="opportunities" class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-4xl font-bold mb-6">Ready to Join Our Team?</h2>
-            <a href="mailto:techgirls@capa-hc.org" class="inline-block bg-white text-violet-700 px-12 py-6 rounded-full text-2xl font-semibold hover:bg-gray-100">
-                Apply Now →
-            </a>
+            <h2 class="text-4xl font-bold text-center mb-4">Current Opportunities</h2>
+            <p class="text-center text-gray-600 mb-12">Fall 2026 Semester • Howard County, MD</p>
+
+            <div class="bg-white border border-gray-200 rounded-3xl p-10">
+                <h3 class="text-2xl font-semibold mb-4">High School STEM Tutor</h3>
+                <p class="text-gray-600 mb-8">Teach weekly 1.5-hour after-school sessions • 10 weeks per semester</p>
+                <span class="inline-block bg-green-100 text-green-700 px-5 py-2 rounded-full text-sm font-medium">Multiple Positions Available</span>
+            </div>
+
+            <div class="text-center mt-12">
+                <p class="text-gray-600 mb-8">No prior STEM experience required — we provide training and lesson plans.</p>
+                <a href="mailto:techgirls@capa-hc.org" 
+                   class="inline-block bg-violet-600 hover:bg-violet-700 text-white px-12 py-6 rounded-full text-xl font-semibold">
+                    Apply Now →
+                </a>
+            </div>
         </div>
     </section>
 
     <footer class="bg-gray-900 text-gray-400 py-12 text-center">
         <p>A program of <strong>CAPA-HC Achieve Success Together</strong></p>
-        <p class="mt-2">techgirls@capa-hc.org</p>
+        <p class="mt-2">Email: <a href="mailto:techgirls@capa-hc.org" class="text-violet-400">techgirls@capa-hc.org</a></p>
         <p class="mt-6">© 2026 TechGirls • Howard County, Maryland</p>
     </footer>
 </body>
