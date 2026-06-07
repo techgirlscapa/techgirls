@@ -8,8 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
     <style>
         .hero-bg { 
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                        url('https://picsum.photos/id/1015/2000/1200'); 
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('hero-image.jpg'); 
             background-size: cover; 
             background-position: center;
         }
@@ -21,8 +20,10 @@
     <nav class="bg-white shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <div class="w-12 h-12 bg-violet-600 rounded-full flex items-center justify-center text-white text-3xl font-bold">TG</div>
-                <div class="text-2xl font-bold text-violet-700">TechGirls</div>
+                <div class="w-12 h-12 bg-gradient-to-br from-violet-600 to-pink-600 rounded-2xl flex items-center justify-center text-white text-3xl font-bold">TG</div>
+                <div>
+                    <span class="text-2xl font-bold text-violet-700">TechGirls</span>
+                </div>
             </div>
             <div class="hidden md:flex gap-8 text-lg font-medium">
                 <a href="index.html" class="hover:text-violet-600">Home</a>
@@ -32,25 +33,25 @@
                 <a href="gallery.html" class="hover:text-violet-600">Gallery</a>
                 <a href="contact.html" class="hover:text-violet-600">Contact</a>
             </div>
-            <a href="tutors.html" class="bg-violet-600 hover:bg-violet-700 text-white px-6 py-3 rounded-full font-medium">Become a Tutor</a>
+            <a href="tutors.html" class="bg-violet-600 hover:bg-violet-700 text-white px-8 py-3 rounded-full font-semibold">Become a Tutor</a>
         </div>
     </nav>
 
     <!-- Hero -->
     <section class="hero-bg h-screen flex items-center text-white">
         <div class="max-w-7xl mx-auto px-6 text-center">
-            <h1 class="text-6xl md:text-7xl font-bold mb-6">Empowering the Next Generation<br>of STEM Leaders</h1>
-            <p class="text-2xl mb-10">Free after-school STEM program for 4th & 5th grade girls in Howard County</p>
+            <h1 class="text-6xl md:text-7xl font-bold mb-6 leading-tight">Empowering Girls<br>to Lead in STEM</h1>
+            <p class="text-2xl mb-10 max-w-2xl mx-auto">Free after-school program for 4th & 5th grade girls in Howard County</p>
             <div class="flex flex-col sm:flex-row gap-6 justify-center">
-                <a href="programs.html" class="bg-white text-violet-700 px-10 py-5 rounded-full text-xl font-semibold">Explore Programs</a>
-                <a href="tutors.html" class="border-2 border-white px-10 py-5 rounded-full text-xl font-semibold hover:bg-white hover:text-violet-700">Apply to Tutor</a>
+                <a href="programs.html" class="bg-white text-violet-700 px-10 py-5 rounded-full text-xl font-semibold hover:scale-105 transition">Explore Programs</a>
+                <a href="tutors.html" class="border-2 border-white px-10 py-5 rounded-full text-xl font-semibold hover:bg-white hover:text-violet-700 transition">Join as a Tutor</a>
             </div>
         </div>
     </section>
 
     <footer class="bg-gray-900 text-gray-400 py-12 text-center">
         <p>A program of <strong>CAPA-HC Achieve Success Together</strong></p>
-        <p class="mt-2">Email: <a href="mailto:techgirls@capa-hc.org" class="text-violet-400">techgirls@capa-hc.org</a></p>
+        <p class="mt-2">techgirls@capa-hc.org</p>
         <p class="mt-6">© 2026 TechGirls • Howard County, Maryland</p>
     </footer>
 </body>
