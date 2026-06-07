@@ -3,109 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Become a Tutor - TechGirls</title>
+    <title>Our Tutors | TechGirls</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <style>
-        body { font-family: system-ui, -apple-system, sans-serif; }
-        .hero-bg { background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('hero-image.jpg'); background-size: cover; background-position: center; }
-    </style>
 </head>
-<body class="bg-gray-50">
+<body class="font-sans">
 
     <!-- Navbar -->
-    <nav class="bg-white shadow-md sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-violet-600 rounded-full flex items-center justify-center text-white text-2xl font-bold">TG</div>
-                <div class="text-2xl font-semibold text-gray-800">TechGirls</div>
+                <div class="w-12 h-12 bg-gradient-to-br from-violet-600 to-pink-600 rounded-2xl flex items-center justify-center text-white text-3xl font-bold">TG</div>
+                <div class="text-2xl font-bold text-violet-700">TechGirls</div>
             </div>
-            <a href="index.html" class="text-violet-600 hover:text-violet-700 font-medium">← Back to Home</a>
+            <div class="hidden md:flex gap-8 text-lg font-medium">
+                <a href="index.html" class="hover:text-violet-600">Home</a>
+                <a href="about.html" class="hover:text-violet-600">About</a>
+                <a href="programs.html" class="hover:text-violet-600">Programs</a>
+                <a href="tutors.html" class="hover:text-violet-600">Our Tutors</a>
+                <a href="gallery.html" class="hover:text-violet-600">Gallery</a>
+                <a href="contact.html" class="hover:text-violet-600">Contact</a>
+            </div>
+            <a href="contact.html" class="bg-violet-600 hover:bg-violet-700 text-white px-8 py-3 rounded-full font-semibold">Join Us</a>
         </div>
     </nav>
 
     <!-- Hero -->
-    <section class="hero-bg text-white py-28">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <h1 class="text-5xl md:text-6xl font-bold mb-6">Join TechGirls as a Tutor</h1>
-            <p class="text-2xl mb-8">Make a difference. Build leadership skills.<br>Empower young girls in STEM.</p>
-            <a href="#apply" 
-               class="inline-block bg-white text-violet-700 hover:bg-gray-100 px-10 py-5 rounded-full text-xl font-semibold transition">
-                View Opportunities
+    <section class="hero-bg h-screen flex items-center text-white" style="background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('tutors-hero.jpg'); background-size: cover; background-position: center;">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h1 class="text-6xl md:text-7xl font-bold mb-6">Our Tutors</h1>
+            <p class="text-3xl mb-10">High School Leaders Empowering Young Girls in STEM</p>
+        </div>
+    </section>
+
+    <!-- Videos Section for Captains -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Meet Our Captains</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                
+                <!-- Video 1 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
+                    <div class="aspect-video">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YOUR_CAPTAIN_VIDEO_1" 
+                                frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl">Captain Interview / Experience</h3>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-xl">
+                    <div class="aspect-video">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YOUR_CAPTAIN_VIDEO_2" 
+                                frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-semibold text-xl">Why I Love Being a TechGirls Tutor</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-violet-700 text-white text-center">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-6">Want to Join Our Tutor Team?</h2>
+            <a href="mailto:techgirls@capa-hc.org" 
+               class="inline-block bg-white text-violet-700 px-12 py-6 rounded-full text-2xl font-semibold hover:bg-gray-100">
+                Apply Now →
             </a>
         </div>
     </section>
 
-    <!-- Description -->
-    <section class="py-16 bg-white">
-        <div class="max-w-4xl mx-auto px-6">
-            <p class="text-xl leading-relaxed text-gray-700">
-                TechGirls is a free after-school STEM program for 4th and 5th grade girls in Howard County, run by CAPA-HC Achieve Success Together.
-            </p>
-            <p class="text-xl leading-relaxed text-gray-700 mt-6">
-                As a high school tutor, you will teach fun, hands-on STEM lessons, mentor young girls, and help them build confidence in science and technology. 
-                You'll gain valuable teaching, leadership, and mentorship experience while making a real impact.
-            </p>
-        </div>
-    </section>
-
-    <!-- Benefits -->
-    <section class="py-16 bg-violet-50">
-        <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Why Become a TechGirls Tutor?</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-3xl shadow-sm">
-                    <h3 class="text-2xl font-semibold mb-4">💰 Payment or Service Hours</h3>
-                    <p class="text-gray-600">Get paid or earn valuable community service hours.</p>
-                </div>
-                <div class="bg-white p-8 rounded-3xl shadow-sm">
-                    <h3 class="text-2xl font-semibold mb-4">🏆 Leadership Experience</h3>
-                    <p class="text-gray-600">Develop teaching and mentorship skills that look great on college applications.</p>
-                </div>
-                <div class="bg-white p-8 rounded-3xl shadow-sm">
-                    <h3 class="text-2xl font-semibold mb-4">❤️ Real Impact</h3>
-                    <p class="text-gray-600">Help close the gender gap in STEM by inspiring young girls.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Current Opportunities -->
-    <section id="apply" class="py-20">
-        <div class="max-w-4xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-4">Current Opportunities</h2>
-            <p class="text-center text-gray-600 mb-12">Fall 2026 Semester • Howard County, MD</p>
-
-            <div class="space-y-6">
-                <!-- Position 1 -->
-                <div class="bg-white border border-gray-200 rounded-3xl p-8 flex flex-col md:flex-row md:items-center justify-between gap-6">
-                    <div>
-                        <h3 class="text-2xl font-semibold">High School STEM Tutor</h3>
-                        <p class="text-gray-600 mt-2">Teach weekly 1.5-hour after-school sessions • 10 weeks per semester</p>
-                    </div>
-                    <div class="text-right">
-                        <span class="inline-block bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium">Multiple Positions</span>
-                        <a href="mailto:techgirls@capa-hc.org" 
-                           class="mt-4 md:mt-0 block md:inline-block bg-violet-600 hover:bg-violet-700 text-white px-8 py-4 rounded-full font-semibold">
-                            Apply Now →
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center mt-12">
-                <p class="text-gray-600">No prior STEM experience required — we provide training and lesson plans.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-12">
-        <div class="max-w-4xl mx-auto px-6 text-center">
-            <p class="text-lg">A program of <strong class="text-white">CAPA-HC Achieve Success Together</strong></p>
-            <p class="mt-4">Email: <a href="mailto:techgirls@capa-hc.org" class="text-violet-400 hover:underline">techgirls@capa-hc.org</a></p>
-            <p class="mt-8 text-sm">© 2026 TechGirls • Howard County, Maryland</p>
-        </div>
+    <footer class="bg-gray-900 text-gray-400 py-12 text-center">
+        <p>A program of <strong>CAPA-HC Achieve Success Together</strong></p>
+        <p class="mt-2">techgirls@capa-hc.org</p>
+        <p class="mt-6">© 2026 TechGirls • Howard County, Maryland</p>
     </footer>
 </body>
 </html>
