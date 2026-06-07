@@ -9,95 +9,36 @@
 </head>
 <body class="font-sans">
 
-                 <!-- Navbar with Working Mobile Menu -->
-    <nav class="bg-white shadow-lg sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 py-5">
-            <div class="flex justify-between items-center">
-                <!-- Logo -->
-                <div class="flex items-center gap-3">
-                    <div class="w-12 h-12 bg-gradient-to-br from-violet-600 to-pink-600 rounded-2xl flex items-center justify-center text-white text-3xl font-bold">TG</div>
-                    <div class="text-2xl font-bold text-violet-700">TechGirls</div>
-                </div>
-
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex gap-8 text-lg font-medium">
-                    <a href="index.html" class="hover:text-violet-600">Home</a>
-                    <a href="about.html" class="hover:text-violet-600">About</a>
-                    <a href="programs.html" class="hover:text-violet-600">Programs</a>
-                    <a href="tutors.html" class="hover:text-violet-600">Our Tutors</a>
-                    <a href="gallery.html" class="hover:text-violet-600">In Action</a>
-                    <a href="contact.html" class="hover:text-violet-600">Contact</a>
-                </div>
-
-                <!-- Mobile Hamburger -->
-                <button onclick="toggleMobileMenu()" class="md:hidden text-4xl text-gray-700">
-                    ☰
-                </button>
-            </div>
-
-            <!-- Mobile Menu -->
-            <div id="mobileMenu" class="hidden md:hidden mt-6 pt-6 border-t border-gray-200">
-                <div class="flex flex-col gap-6 text-lg font-medium">
-                    <a href="index.html" class="hover:text-violet-600">Home</a>
-                    <a href="about.html" class="hover:text-violet-600">About</a>
-                    <a href="programs.html" class="hover:text-violet-600">Programs</a>
-                    <a href="tutors.html" class="hover:text-violet-600">Our Tutors</a>
-                    <a href="gallery.html" class="hover:text-violet-600">In Action</a>
-                    <a href="contact.html" class="hover:text-violet-600">Contact</a>
-                </div>
+    <!-- Top Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50 py-4 border-b">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-wrap gap-x-6 gap-y-3 justify-center text-base font-medium">
+                <a href="index.html" class="hover:text-violet-600">🏠 Home</a>
+                <a href="about.html" class="hover:text-violet-600">ℹ️ About</a>
+                <a href="programs.html" class="hover:text-violet-600">📚 Programs</a>
+                <a href="tutors.html" class="hover:text-violet-600">👩‍🏫 Our Tutors</a>
+                <a href="gallery.html" class="hover:text-violet-600">📸 In Action</a>
+                <a href="contact.html" class="hover:text-violet-600">📩 Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Mobile Menu Script -->
-    <script>
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
-        }
-    </script>
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
-        }
-    </script>
-
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
-        }
-    </script>
-
-    <script>
-        const menuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        menuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
-
     <!-- Hero -->
-    <section class="bg-gradient-to-r from-violet-600 to-purple-600 text-white py-20">
+    <section class="bg-gradient-to-r from-violet-600 to-purple-600 text-white py-24">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <h1 class="text-5xl md:text-6xl font-bold mb-6">Our Programs</h1>
-            <p class="text-2xl">Fun, hands-on STEM activities for 4th & 5th grade girls</p>
+            <p class="text-2xl">Fun, hands-on STEM experiences for 4th & 5th grade girls</p>
         </div>
     </section>
 
-    <!-- Programs Content -->
-    <section class="py-20">
+    <!-- Regular After-School Program -->
+    <section class="py-20 bg-white">
         <div class="max-w-7xl mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-10">
-                
-                <div class="bg-white border border-gray-200 rounded-3xl p-10">
-                    <h3 class="text-3xl font-bold mb-6 flex items-center gap-3">
-                        <i class="fa-solid fa-microchip text-violet-600"></i>
-                        Hands-on STEM Activities
-                    </h3>
-                    <ul class="space-y-4 text-lg">
+            <h2 class="text-4xl font-bold text-center mb-12">After-School Program</h2>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-3xl font-semibold mb-6">Weekly Hands-on STEM Workshops</h3>
+                    <ul class="space-y-4 text-lg text-gray-700">
                         <li>🛠️ Construct a prosthetic hand</li>
                         <li>🌉 Make a bridge from popsicle sticks</li>
                         <li>⚡ Tinker with Snap Circuits</li>
@@ -105,33 +46,54 @@
                         <li>🎮 Games, Kahoot & more!</li>
                     </ul>
                 </div>
-
-                <div class="bg-white border border-gray-200 rounded-3xl p-10">
-                    <h3 class="text-3xl font-bold mb-6 flex items-center gap-3">
-                        <i class="fa-solid fa-rocket text-pink-600"></i>
-                        Program Details
-                    </h3>
-                    <ul class="space-y-4 text-lg">
-                        <li><strong>Duration:</strong> 10 weeks per semester</li>
-                        <li><strong>Time:</strong> 1.5 hours weekly after school</li>
-                        <li><strong>Location:</strong> Various elementary schools in Howard County</li>
-                        <li><strong>Taught by:</strong> Trained high school tutors</li>
-                        <li><strong>Cost:</strong> FREE!</li>
-                    </ul>
+                <div class="bg-gray-50 p-8 rounded-3xl">
+                    <p class="text-xl"><strong>10 weeks per semester</strong><br>
+                    1.5-hour weekly sessions after school<br>
+                    Taught by trained high school tutors<br>
+                    <strong>FREE</strong> for participants</p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <div class="mt-12 text-center">
-                <a href="tutors.html" class="inline-block bg-violet-600 text-white px-10 py-5 rounded-full text-xl font-semibold hover:bg-violet-700">
-                    Interested in Teaching These Activities? Become a Tutor →
-                </a>
+    <!-- Summer Workshops -->
+    <section class="py-20 bg-orange-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-8">Summer Workshops</h2>
+            <div class="bg-white rounded-3xl p-10 text-center">
+                <h3 class="text-4xl font-bold text-orange-600 mb-4">TECHKIDS SUMMER LESSONS</h3>
+                <p class="text-2xl mb-6">27 June - 22 August 2026</p>
+                <p class="text-xl mb-8">Every Saturday at The Dancel Y, Ellicott City</p>
+                <p class="text-3xl font-semibold text-orange-600">$40 for 8 Sessions</p>
+                <p class="mt-6 text-gray-600">Explore STEM fun with inspiring high school tutors!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Private Tutoring -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-8">Private Tutoring Opportunity</h2>
+            <div class="bg-blue-50 rounded-3xl p-10">
+                <h3 class="text-3xl font-semibold mb-6 text-center">Connect with TechGirls Tutors for Private Summer Lessons</h3>
+                <p class="text-lg text-gray-700 mb-6">
+                    Keep your child's academic momentum going all summer long! Our high school tutors are available for personalized, one-on-one or small-group tutoring sessions.
+                </p>
+                <ul class="text-lg text-gray-700 space-y-3 mb-8">
+                    <li>✅ Tailored to your child's specific school subjects and learning goals</li>
+                    <li>✅ Builds confidence for the upcoming school year</li>
+                    <li>✅ Prevents the "summer slide"</li>
+                </ul>
+                <p class="text-center text-sm text-gray-500">
+                    Note: This tutoring initiative is managed independently by individual tutors and is not an official TechGirls program.
+                </p>
             </div>
         </div>
     </section>
 
     <footer class="bg-gray-900 text-gray-400 py-12 text-center">
         <p>A program of <strong>CAPA-HC Achieve Success Together</strong></p>
-        <p class="mt-2">Email: <a href="mailto:techgirls@capa-hc.org" class="text-violet-400">techgirls@capa-hc.org</a></p>
+        <p class="mt-2">techgirls@capa-hc.org</p>
         <p class="mt-6">© 2026 TechGirls • Howard County, Maryland</p>
     </footer>
 </body>
