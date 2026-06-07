@@ -8,65 +8,17 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 <body class="font-sans">
-       <!-- Navbar with Mobile Menu -->
-    <nav class="bg-white shadow-lg sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto px-6 py-5">
-            <div class="flex justify-between items-center">
-                <!-- Logo -->
-                <div class="flex items-center gap-3">
-                    <div class="w-12 h-12 bg-gradient-to-br from-violet-600 to-pink-600 rounded-2xl flex items-center justify-center text-white text-3xl font-bold">TG</div>
-                    <div class="text-2xl font-bold text-violet-700">TechGirls</div>
-                </div>
 
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex gap-8 text-lg font-medium">
-                    <a href="index.html" class="hover:text-violet-600">Home</a>
-                    <a href="about.html" class="hover:text-violet-600">About</a>
-                    <a href="programs.html" class="hover:text-violet-600">Programs</a>
-                    <a href="tutors.html" class="hover:text-violet-600">Our Tutors</a>
-                    <a href="gallery.html" class="hover:text-violet-600">In Action</a>
-                    <a href="contact.html" class="hover:text-violet-600">Contact</a>
-                </div>
-
-                <!-- Mobile Hamburger -->
-                <button onclick="toggleMobileMenu()" class="md:hidden text-4xl text-gray-700">
-                    ☰
-                </button>
-            </div>
-
-            <!-- Mobile Menu -->
-            <div id="mobileMenu" class="hidden md:hidden mt-6 pt-6 border-t border-gray-200">
-                <div class="flex flex-col gap-6 text-lg font-medium text-center">
-                    <a href="index.html" class="hover:text-violet-600">Home</a>
-                    <a href="about.html" class="hover:text-violet-600">About</a>
-                    <a href="programs.html" class="hover:text-violet-600">Programs</a>
-                    <a href="tutors.html" class="hover:text-violet-600">Our Tutors</a>
-                    <a href="gallery.html" class="hover:text-violet-600">In Action</a>
-                    <a href="contact.html" class="hover:text-violet-600">Contact</a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Mobile Menu Script -->
-    <script>
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
-        }
-    </script>
-                
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex gap-8 text-lg font-medium">
-                    <a href="index.html" class="hover:text-violet-600">Home</a>
-                    <a href="about.html" class="hover:text-violet-600">About</a>
-                    <a href="programs.html" class="hover:text-violet-600">Programs</a>
-                    <a href="tutors.html" class="hover:text-violet-600">Our Tutors</a>
-                    <a href="gallery.html" class="hover:text-violet-600">In Action</a>
-                    <a href="contact.html" class="hover:text-violet-600">Contact</a>
-                </div>
-
-                <a href="tutors.html" class="bg-violet-600 hover:bg-violet-700 text-white px-6 py-3 rounded-full font-semibold text-sm md:text-base">Become a Tutor</a>
+    <!-- Clean Top Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50 py-4 border-b">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex flex-wrap gap-x-6 gap-y-3 justify-center text-base font-medium">
+                <a href="index.html" class="hover:text-violet-600">🏠 Home</a>
+                <a href="about.html" class="hover:text-violet-600">ℹ️ About</a>
+                <a href="programs.html" class="hover:text-violet-600">📚 Programs</a>
+                <a href="tutors.html" class="hover:text-violet-600">👩‍🏫 Our Tutors</a>
+                <a href="gallery.html" class="hover:text-violet-600">📸 In Action</a>
+                <a href="contact.html" class="hover:text-violet-600">📩 Contact</a>
             </div>
         </div>
     </nav>
@@ -75,7 +27,7 @@
     <section class="bg-gradient-to-r from-violet-700 to-purple-700 text-white py-24">
         <div class="max-w-7xl mx-auto px-6 text-center">
             <h1 class="text-5xl md:text-6xl font-bold mb-6">About TechGirls</h1>
-            <p class="text-2xl max-w-3xl mx-auto">Empowering 4th & 5th grade girls in Howard County through hands-on STEM since 2022</p>
+            <p class="text-2xl max-w-3xl mx-auto">Empowering the next generation of girls in STEM since 2022</p>
         </div>
     </section>
 
@@ -111,27 +63,22 @@
         <div class="max-w-7xl mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-12">What People Are Saying</h2>
             <div class="grid md:grid-cols-2 gap-8">
-                
                 <div class="bg-white p-8 rounded-3xl shadow">
-                    <p class="italic text-lg text-gray-700">"I don't want to go to graduation because I'm not ready for TechGirls to end! I just want to keep coming to TechGirls every single week."</p>
+                    <p class="italic text-lg text-gray-700">"I don't want to go to graduation because I'm not ready for TechGirls to end! I just want to keep coming every single week."</p>
                     <p class="mt-6 font-semibold">- A Student</p>
                 </div>
-
                 <div class="bg-white p-8 rounded-3xl shadow">
-                    <p class="italic text-lg text-gray-700">"This was a wonderful experience for our family. My daughter was always excited to share her experiments and new confidence, and we hope her younger sisters can participate in the future."</p>
+                    <p class="italic text-lg text-gray-700">"This was a wonderful experience for our family... My daughter was always excited to share her experiments and new confidence."</p>
                     <p class="mt-6 font-semibold">- A Parent</p>
                 </div>
-
                 <div class="bg-white p-8 rounded-3xl shadow">
-                    <p class="italic text-lg text-gray-700">"The program really helps with your communication and presentation skills... The TechGirls community is really supportive. All the parents and tutors will gladly help you if you encounter any challenges."</p>
+                    <p class="italic text-lg text-gray-700">"The program really helps with communication and presentation skills... The TechGirls community is really supportive."</p>
                     <p class="mt-6 font-semibold">- Montresor, Future Tutor</p>
                 </div>
-
                 <div class="bg-white p-8 rounded-3xl shadow">
-                    <p class="italic text-lg text-gray-700">"I attended the graduation ceremony and came away inspired and impressed. The diversity of the students was amazing. This program will pay dividends for years to come."</p>
+                    <p class="italic text-lg text-gray-700">"I attended the graduation ceremony... This program will pay dividends for years to come."</p>
                     <p class="mt-6 font-semibold">- A Parent</p>
                 </div>
-
             </div>
         </div>
     </section>
