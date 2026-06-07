@@ -9,7 +9,7 @@
 </head>
 <body class="font-sans">
 
-              <!-- Navbar with Hamburger Menu -->
+                 <!-- Improved Navbar with Hamburger Menu -->
     <nav class="bg-white shadow-lg sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-6 py-5">
             <div class="flex justify-between items-center">
@@ -29,31 +29,34 @@
                     <a href="contact.html" class="hover:text-violet-600">Contact</a>
                 </div>
 
-                <!-- Mobile Hamburger + Button -->
+                <!-- Right side -->
                 <div class="flex items-center gap-4">
                     <a href="tutors.html" class="hidden md:block bg-violet-600 hover:bg-violet-700 text-white px-6 py-3 rounded-full font-semibold">Become a Tutor</a>
-                    
-                    <!-- Hamburger Button -->
-                    <button id="mobile-menu-button" class="md:hidden text-3xl text-gray-700">
-                        ☰
-                    </button>
+                    <button onclick="toggleMenu()" class="md:hidden text-4xl text-gray-700 leading-none">☰</button>
                 </div>
             </div>
 
             <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden mt-6 py-6 border-t">
-                <div class="flex flex-col gap-6 text-lg font-medium">
+            <div id="mobileMenu" class="hidden md:hidden mt-6 pt-6 border-t border-gray-200">
+                <div class="flex flex-col gap-6 text-lg font-medium text-center">
                     <a href="index.html" class="hover:text-violet-600">Home</a>
                     <a href="about.html" class="hover:text-violet-600">About</a>
                     <a href="programs.html" class="hover:text-violet-600">Programs</a>
                     <a href="tutors.html" class="hover:text-violet-600">Our Tutors</a>
                     <a href="gallery.html" class="hover:text-violet-600">In Action</a>
                     <a href="contact.html" class="hover:text-violet-600">Contact</a>
-                    <a href="tutors.html" class="bg-violet-600 text-white py-4 text-center rounded-full">Become a Tutor</a>
+                    <a href="tutors.html" class="bg-violet-600 text-white py-4 rounded-full mt-4">Become a Tutor</a>
                 </div>
             </div>
         </div>
     </nav>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
 
     <script>
         const menuButton = document.getElementById('mobile-menu-button');
